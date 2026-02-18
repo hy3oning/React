@@ -1,16 +1,11 @@
 import "./App.css";
-import Profile from "./components/Profile";
-import { useState } from "react";
+import Todo from "./components/Todo";
 
 function App() {
-  const [btn, setBtn] = useState();
-  const onChange = (e) => {
-    setBtn(e.target.value);
-  };
   return (
     <>
-      <Profile name={"이상현"} />
-      <button onChange={onChange}></button>
+      <h1>이곳은 메인</h1>
+      <Todo />
     </>
   );
 }
